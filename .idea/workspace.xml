@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="870f934f-4b6f-4fc0-a7c8-5d5c715161e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gameserver/cg/center,go.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gameserver/cg/centerclient.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gameserver/cg/player.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gameserver/ipc/client.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gameserver/ipc/server.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gameserver/main.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gameserver/ipc/ipc_test.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gameserver/ipc/client.go" afterPath="$PROJECT_DIR$/gameserver/ipc/client.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gameserver/ipc/server.go" afterPath="$PROJECT_DIR$/gameserver/ipc/server.go" />
     </list>
     <ignored path="golang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,13 +32,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gameserver/ipc/server.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1012">
-              <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+            <state relative-caret-position="284">
+              <caret line="36" column="68" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
               <folding>
                 <element signature="e#13#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ipc_test.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameserver/ipc/ipc_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+              <folding>
+                <element signature="e#13#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,55 +59,11 @@
       <file leaf-file-name="client.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gameserver/ipc/client.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="242">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="25" />
               <folding>
-                <element signature="e#13#40#0" expanded="true" />
+                <element signature="e#13#47#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gameserver/cg/player.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="22" />
-              <folding>
-                <element signature="e#12#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="center,go.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gameserver/cg/center,go.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-              <folding>
-                <element signature="e#12#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="centerclient.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gameserver/cg/centerclient.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gameserver/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -115,6 +80,9 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -134,12 +102,13 @@
         <option value="$PROJECT_DIR$/gobase/mylib/myfileOp.go" />
         <option value="$PROJECT_DIR$/gobase/mylib/getType.go" />
         <option value="$PROJECT_DIR$/gobase/main/main.go" />
-        <option value="$PROJECT_DIR$/gameserver/ipc/server.go" />
-        <option value="$PROJECT_DIR$/gameserver/ipc/client.go" />
         <option value="$PROJECT_DIR$/gameserver/cg/player.go" />
         <option value="$PROJECT_DIR$/gameserver/cg/centerclient.go" />
         <option value="$PROJECT_DIR$/gameserver/cg/center,go.go" />
         <option value="$PROJECT_DIR$/gameserver/main.go" />
+        <option value="$PROJECT_DIR$/gameserver/ipc/ipc_test.go" />
+        <option value="$PROJECT_DIR$/gameserver/ipc/client.go" />
+        <option value="$PROJECT_DIR$/gameserver/ipc/server.go" />
       </list>
     </option>
   </component>
@@ -229,6 +198,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ipc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="golang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="golang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gameserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="cg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -250,26 +237,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Go Single File.go run main.go (1)">
-    <configuration default="false" name="Build main.go and run" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
-      <output_file path="H:\goProject\src\golang\calc\bin" />
-      <module name="calc" />
-      <working_directory value="$PROJECT_DIR$" />
-      <parameters value="add 2 4" />
-      <filePath value="$PROJECT_DIR$/calc/main/main.go" />
-      <kind value="FILE" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Go Test.ipc_test.go">
     <configuration default="false" name="go run main.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
       <module name="gobase" />
       <working_directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/gobase/main/main.go" />
-      <method />
-    </configuration>
-    <configuration default="false" name="go run Array.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
-      <module name="golang" />
-      <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Array/Array.go" />
       <method />
     </configuration>
     <configuration default="false" name="Build golang/gameserver and run" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
@@ -284,6 +256,23 @@
       <module name="golang" />
       <working_directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/gameserver/main.go" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestIpc in ipc_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="golang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="golang/gameserver/ipc" />
+      <pattern value="^TestIpc$" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ipc_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="golang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/gameserver/ipc/ipc_test.go" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -551,19 +540,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Application.Build main.go and run" />
-      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run main.go" />
-      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run Array.go" />
-      <item index="3" class="java.lang.String" itemvalue="Go Application.Build golang/gameserver and run" />
-      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run main.go (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Go Single File.go run main.go" />
+      <item index="1" class="java.lang.String" itemvalue="Go Application.Build golang/gameserver and run" />
+      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run main.go (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Go Test.TestIpc in ipc_test.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Test.ipc_test.go" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run main.go (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Go Application.Build golang/gameserver and run" />
-        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run main.go" />
-        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run Array.go" />
-        <item index="4" class="java.lang.String" itemvalue="Go Application.Build main.go and run" />
+        <item index="0" class="java.lang.String" itemvalue="Go Test.ipc_test.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Test.TestIpc in ipc_test.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Application.Build golang/gameserver and run" />
+        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run main.go (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Go Single File.go run main.go" />
       </list>
     </recent_temporary>
   </component>
@@ -584,20 +573,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAdd1_in_add_test_go - 2016.03.19 at 17h 54m 04s.xml">
-      <configuration name="TestAdd1 in add_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestIpc_in_ipc_test_go - 2016.09.07 at 23h 18m 25s.xml">
+      <configuration name="TestIpc in ipc_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="add_test_go - 2016.03.19 at 17h 53m 15s.xml">
-      <configuration name="add_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestIpc_in_ipc_test_go - 2016.09.07 at 23h 26m 03s.xml">
+      <configuration name="TestIpc in ipc_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="add_test_go - 2016.03.19 at 17h 54m 33s.xml">
-      <configuration name="add_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestIpc_in_ipc_test_go - 2016.09.07 at 23h 29m 30s.xml">
+      <configuration name="TestIpc in ipc_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="add_test_go - 2016.03.19 at 17h 54m 40s.xml">
-      <configuration name="add_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="ipc_test_go - 2016.09.07 at 23h 18m 08s.xml">
+      <configuration name="ipc_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="sqrt_test_go - 2016.03.20 at 17h 57m 29s.xml">
-      <configuration name="sqrt_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="ipc_test_go - 2016.09.07 at 23h 19m 00s.xml">
+      <configuration name="ipc_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ipc_test_go - 2016.09.07 at 23h 22m 04s.xml">
+      <configuration name="ipc_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ipc_test_go - 2016.09.07 at 23h 24m 57s.xml">
+      <configuration name="ipc_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ipc_test_go - 2016.09.07 at 23h 27m 26s.xml">
+      <configuration name="ipc_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ipc_test_go - 2016.09.07 at 23h 29m 45s.xml">
+      <configuration name="ipc_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ipc_test_go - 2016.09.07 at 23h 35m 58s.xml">
+      <configuration name="ipc_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -606,29 +610,29 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17037037" sideWeight="0.5125" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17037037" sideWeight="0.4875" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3195767" sideWeight="0.31666666" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3195767" sideWeight="0.68333334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.165625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1904762" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -653,16 +657,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gobase/main/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="e#14#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Array/Array.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -702,7 +696,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#64#0" expanded="true" />
+            <element signature="e#14#64#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -738,7 +732,7 @@
         <state relative-caret-position="1166">
           <caret line="57" column="44" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
           <folding>
-            <element signature="e#14#64#0" expanded="true" />
+            <element signature="e#14#64#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -774,7 +768,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#64#0" expanded="true" />
+            <element signature="e#14#64#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -802,7 +796,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#64#0" expanded="true" />
+            <element signature="e#14#64#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -830,7 +824,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#64#0" expanded="true" />
+            <element signature="e#14#64#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -858,7 +852,7 @@
         <state relative-caret-position="506">
           <caret line="27" column="18" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="18" />
           <folding>
-            <element signature="e#14#64#0" expanded="true" />
+            <element signature="e#14#64#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1025,32 +1019,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameserver/ipc/client.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding>
-            <element signature="e#13#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gobase/main/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding>
-            <element signature="e#14#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameserver/ipc/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-          <folding>
-            <element signature="e#13#47#0" expanded="true" />
+            <element signature="e#14#64#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1077,9 +1051,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gameserver/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="2398">
+          <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
+          <folding>
+            <element signature="e#14#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameserver/ipc/ipc_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#13#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameserver/ipc/client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="e#13#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameserver/ipc/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="36" column="68" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
+          <folding>
+            <element signature="e#13#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -22,11 +22,13 @@ type IpcServer struct {
 func NewIpcServer(server Server) *IpcServer {
 	return &IpcServer{server}
 }
+
 func (server *IpcServer)Connect() chan string {
 	session := make(chan string, 0)
 	go func(c chan string) {
 		for {
 			request := <-c
+			fmt.Println(request)
 			if request == "CLOSE" {
 				// 关闭该连接
 				break
@@ -41,7 +43,7 @@ func (server *IpcServer)Connect() chan string {
 			c <- string(b) // 返回结果
 		}
 		fmt.Println("Session closed.")
-	}(session)
+	}(session) //<--这里的session是参数...
 	fmt.Println("A new session has been created successfully.")
 	return session
 }

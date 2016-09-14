@@ -13,7 +13,7 @@ const (
 
 func initquestions(quesformem *[member][question]int, quesnum int) {
     
-    r :=  rand.New(rand.NewSource(time.Now().UnixNano()))
+    r :=  rand.New(rand.NewSource(time.Now().UnixNano())) //time as seed to get random
 
 	for i:= 0; i < member; i++ {
 		for j:= 0; j < question; j++ {
@@ -46,7 +46,7 @@ func checkquestion(question1, question2 [question]int) bool {
 			if question1[i] == question2[j] {
 				count++
 
-		        if count > 2 {
+		        if count > 3 {
 				    return true
 				}
 
@@ -78,7 +78,7 @@ func main() {
 	var quesformem [member][question]int
     
     // questions add by 50
-	for i:= 1000; i < 5000; i += 50 {
+	for i:= 500; i < 2000; i += 50 {
 
 		fmt.Println("question number is ", i)
 

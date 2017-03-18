@@ -15,10 +15,10 @@ type Bird struct {
 	nTime int
 }
 
-func (b *Bird)Fly() bool {
+func (b *Bird) Fly() bool {
 	b.nTime--
-	if( b.nTime >= 0 ) {
-        fmt.Println("Brid fly ok! rest " + strconv.Itoa(b.nTime) + " times")
+	if b.nTime >= 0 {
+		fmt.Println("Brid fly ok! rest " + strconv.Itoa(b.nTime) + " times")
 		return true
 	}
 
@@ -26,16 +26,17 @@ func (b *Bird)Fly() bool {
 	return false
 }
 
-func (b Bird)Drop() {
-    b.nTime++
-	fmt.Println("Brid dropped");
+func (b Bird) Drop() {
+	b.nTime++
+	fmt.Println("Brid dropped")
 }
+
 //class Brid end
 
 func main() {
 	//var b1 = Bird{10}
 	//var myWing1 Wing = b1
-    var myWing2 Wing = new(Bird)
+	var myWing2 Wing = new(Bird)
 
 	//myWing1.Fly()
 	myWing2.Fly()

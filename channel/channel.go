@@ -8,19 +8,18 @@ func Count(ch chan int) {
 }
 
 func main() {
-    
 	var n int
 
-    chs := make([]chan int,10)
+	chs := make([]chan int, 10)
 
 	for i := 0; i < 10; i++ {
 		chs[i] = make(chan int)
 		go Count(chs[i])
 	}
 
-    //fmt.Println("go Count() finished")    
+	fmt.Println("go Count() finished")
 
-	for _, ch := range(chs) {
+	for _, ch := range chs {
 		n = <-ch
 		fmt.Println("n ", n)
 	}

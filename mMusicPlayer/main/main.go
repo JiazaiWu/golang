@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"jiazai/mMusicPlayer/library"
-	"jiazai/mMusicPlayer/musicplayer"
+	"golang/mMusicPlayer/library"
+	"golang/mMusicPlayer/musicplayer"
 )
 
 var lib *library.MusicManager
